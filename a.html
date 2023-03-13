@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+</head>
+<body>
+<h1>Do you love me</h1>
+<button type="button" id="yes"onclick="co()">YES</button>
+<button type="button" id="no" >NO</button>
+<script>
+    button = document.getElementById('no')
+    button.style.position = 'absolute'
+    function co() {
+        alert('But I dont love you')
+    }
+  button.addEventListener('mouseover', function () {
+      let left = Math.random()*200
+      let top = Math.random()*200
+
+      button.style.left = left + 'px'
+      button.style.top = top + 'px'
+  })
+
+</script>
+</body>
+</html>
